@@ -1,7 +1,5 @@
 /* GLOBAL STYLES */
-body {
-  padding: 5%;
-}
+
 .flexible-column {
   display: flex;
   flex-direction: column;
@@ -14,16 +12,73 @@ body {
   justify-content: center;
 }
 
+.responsive {
+  display: block;
+}
+
 .column-3 {
   margin: 2%;
   width: 20%;
 }
 
 section {
-  width: 100%;
+  padding:2%;
+  width: 98%;
 }
 
 /* INTRO SECTION */
+
+#intro {
+  background: url('background-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-bottom: 5%;
+  text-shadow: 1px 1px black;
+}
+
 #logo {
-  width: 10%;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 2em;
+  line-height: .5;
+  margin: 0;
+}
+
+/* KEY POINTS SECTION */
+
+/* DETAILS AND SIGNUP SECTION */
+
+/* HOST SECTION */
+
+.host-img img {
+  border-radius: 50%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.host h3, .host p {
+  text-align: center;
+}
+
+/* RESPONSIVE STYLES */
+
+@media all and (min-width: 768px){
+
+  .responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .column-2 {
+    margin: 5%;
+    width: 30%;
+  }
+
+  #intro {
+    background: url('background-full.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
