@@ -1,0 +1,29 @@
+/* GLOBAL STYLES */
+body {
+  padding: 5%;
+}
+.flexible-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexible-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column-3 {
+  margin: 2%;
+  width: 20%;
+}
+
+section {
+  width: 100%;
+}
+
+/* INTRO SECTION */
+#logo {
+  width: 10%;
+}
