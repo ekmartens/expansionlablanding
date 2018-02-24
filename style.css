@@ -1,5 +1,12 @@
 /* GLOBAL STYLES */
+HTML {
+  background: rgb(46, 88, 126);
+}
 
+body {
+  background: #fff;
+  border: 10px solid rgb(46, 88, 126);
+}
 .flexible-column {
   display: flex;
   flex-direction: column;
@@ -26,16 +33,23 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h1, h2, h3 {
-  color: #c07d26;
-    font-family: 'Crushed', cursive;
+  /*color: #2e587e;*/
+  /*color: #c07d26;*/
+  color: #ff5050;
+  font-family: 'Crushed', cursive;
+  text-shadow: 1px 1px black;
 }
 
 h4, h5, h6, p, label {
 font-family: 'Lato', sans-serif;
+}
+
+svg {
+  color: #ff5050;
 }
 
 /* INTRO SECTION */
@@ -45,15 +59,9 @@ font-family: 'Lato', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 5%;
-  text-shadow: 1px 1px black;
-}
-
-#intro h1, #intro h2, #intro h3, #intro p {
-  color: #fff;
 }
 
 #logo {
-  font-size: 2em;
   line-height: 0;
   margin-top: 5%;
   margin-bottom: .5%;
@@ -68,21 +76,67 @@ font-family: 'Lato', sans-serif;
 /* CLOCK */
 
 #countdown {
-  background: rgba(255, 204, 204, .5);
+  background: rgb(46, 88, 126);
+  /*background: rgba(255, 204, 204, .5);*/
 }
 
 /* DETAILS AND SIGNUP SECTION */
 
+#form-area {
+  background: rgba(46, 88, 126, .3);
+  margin: 2%;
+  padding: 2%;
+}
+
+input {
+  height: 25px;
+  margin: 2% 0;
+  width: 98%;
+}
+
+.asterisk {
+  color: #ff5050;
+}
+
+.asterisk, .indicates-required {
+  font-family: 'Lato', sans-serif;
+}
+.indicates-required {
+  text-align: right;
+}
+
+.button {
+  background: #ff5050;
+  border: 4px outset #ff5050;
+  font-family: 'Lato', sans-serif;
+  width: 30%;
+}
+
 /* HOST SECTION */
 
-.host-img img {
+.host-img {
   border-radius: 50%;
+}
+
+.host-img img {
+  background: rgba(46, 88, 126, .3);
+  border: 4px solid rgb(46, 88, 126);
+  border-radius: 50%;
+  padding: 1%;
   margin-left: 10%;
   width: 80%;
 }
 
 .host h3, .host p {
   text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  background: rgb(46, 88, 126);
+  color: #ff5050;
+  padding-top: 2%;
 }
 
 /* RESPONSIVE STYLES */
@@ -104,6 +158,11 @@ font-family: 'Lato', sans-serif;
     background: url('background-full.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  #form-area {
+    background: rgba(46, 88, 126, .3);
+    padding: 2%;
   }
 
 }

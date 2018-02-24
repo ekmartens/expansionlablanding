@@ -1,3 +1,5 @@
+//Make the webinar date always show 1 month after today's date.
+
 var d = new Date();
 var currentDay = d.getDate();
 var currentMonth = d.getMonth();
@@ -41,7 +43,29 @@ function setMonth() {
 }
 
 function changeDate(){
-  date.innerText = n + ' ' + currentDay + ' ' + year;
+  date.innerText = n + ' 15 ' + year;
 }
 
 changeDate();
+
+//Countdown Clock
+
+var countDownDate = new Date(n + "15, 2018 13:00:00").getTime();
+
+var runClock = setInterval(function() {
+
+    // Today's date and time
+    var now = new Date().getTime();
+
+    // Distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("clock").innerHTML = days + " Days || " + hours + " Hrs || "
+    + minutes + " Min || " + seconds + " Sec ";
+}, 1000);
