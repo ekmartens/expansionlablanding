@@ -22,8 +22,20 @@
 }
 
 section {
-  padding:2%;
-  width: 98%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1, h2, h3 {
+  color: #c07d26;
+    font-family: 'Crushed', cursive;
+}
+
+h4, h5, h6, p, label {
+font-family: 'Lato', sans-serif;
 }
 
 /* INTRO SECTION */
@@ -32,19 +44,32 @@ section {
   background: url('background-mobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
   padding-bottom: 5%;
   text-shadow: 1px 1px black;
 }
 
+#intro h1, #intro h2, #intro h3, #intro p {
+  color: #fff;
+}
+
 #logo {
-  font-family: 'Love Ya Like A Sister', cursive;
   font-size: 2em;
-  line-height: .5;
-  margin: 0;
+  line-height: 0;
+  margin-top: 5%;
+  margin-bottom: .5%;
+}
+
+#event-time {
+  margin-left: 8px;
 }
 
 /* KEY POINTS SECTION */
+
+/* CLOCK */
+
+#countdown {
+  background: rgba(255, 204, 204, .5);
+}
 
 /* DETAILS AND SIGNUP SECTION */
 
