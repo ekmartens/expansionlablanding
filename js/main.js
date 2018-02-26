@@ -1,4 +1,4 @@
-//Make the webinar date always show 1 month after today's date.
+//Make the webinar date always show the 15th of next month
 
 var d = new Date();
 var currentDay = d.getDate();
@@ -50,15 +50,15 @@ changeDate();
 
 //Countdown Clock
 
-var countDownDate = new Date(n + "15, 2018 13:00:00").getTime();
+var webinarDate = new Date(n + "15, 2018 13:00:00").getTime();
 
 var runClock = setInterval(function() {
 
     // Today's date and time
     var now = new Date().getTime();
 
-    // Distance between now an the count down date
-    var distance = countDownDate - now;
+    // Distance between now and the webinar date
+    var distance = webinarDate - now;
 
     // Days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));

@@ -61,6 +61,12 @@ svg {
   padding-bottom: 5%;
 }
 
+#intro p {
+  font-size: .75em;
+  margin: 2%;
+  text-align: center;
+}
+
 #logo {
   line-height: 0;
   margin-top: 5%;
@@ -70,8 +76,6 @@ svg {
 #event-time {
   margin-left: 8px;
 }
-
-/* KEY POINTS SECTION */
 
 /* CLOCK */
 
@@ -158,6 +162,10 @@ footer {
     background: url('background-full.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  #intro p {
+    font-size: 1em;
   }
 
   #form-area {
